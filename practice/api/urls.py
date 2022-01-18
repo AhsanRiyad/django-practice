@@ -18,4 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('',  views.firstView ),
+    path('testresponse',  views.responseTest),
+    path('getTasks',  views.getTasks),
 ]

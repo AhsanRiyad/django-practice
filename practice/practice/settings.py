@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2*tkg4axi(g2)$@gdnl$w%781b(8!pn5x180omww-6#jt%@n*f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     #this is for rest api
     'rest_framework',
     'api.apps.ApiConfig',
+    'base.apps.BaseConfig',
 ]
 
 MIDDLEWARE = [
